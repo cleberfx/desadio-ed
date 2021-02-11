@@ -9,7 +9,8 @@ client = pymongo.MongoClient("mongodb+srv://estudante_igti:SRwkJTDz2nA28ME9@unic
 db = client.ibge
 records = db.pnadc20203
 df=pd.DataFrame(list(records.find()))
-df.to_csv("/workspace/desadio-ed/data/pnadc20203.csv", index=False, encoding="utf-8,", sep=";")
+# df.to_csv("/workspace/desadio-ed/data/pnadc20203.csv", index=False, encoding="utf-8,", sep=";")
+df.to_csv("/workspace/desadio-ed/data/pnadc20203.csv")
 
 #print your collection
 #print(list(records.find()))
